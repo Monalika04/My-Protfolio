@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000000;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .rotate-y-12:hover {
+    transform: rotateY(12deg);
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .animate-gradient-x {
+    animation: gradient-x 4s ease infinite;
+    background-size: 400% 400%;
+  }
+}
+
+/* Custom Floating Animations */
+@keyframes float-0 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-20px) rotate(180deg); } 
+}
+@keyframes float-1 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-30px) rotate(-180deg); } 
+}
+@keyframes float-2 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-25px) rotate(90deg); } 
+}
+@keyframes float-3 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-35px) rotate(-90deg); } 
+}
+@keyframes float-4 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-15px) rotate(270deg); } 
+}
+@keyframes float-5 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-40px) rotate(-270deg); } 
+}
+@keyframes float-6 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-28px) rotate(45deg); } 
+}
+@keyframes float-7 { 
+  0%, 100% { transform: translateY(0px) rotate(0deg); } 
+  50% { transform: translateY(-32px) rotate(-45deg); } 
+}
